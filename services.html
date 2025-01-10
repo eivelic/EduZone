@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" type="logo-icon" href="images/EduZoneWebIcon.png">
+        <title>Services</title>
+        <script src="scripts/services.js" defer></script>
+        <script src="scripts/services-todo.js" defer></script>
+        <link rel="stylesheet" href="styles/services.css">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,500&display=swap');
+            </style>
+    </head>
+    <body>
+        <!-- div for a background image -->
+        <div class="background-image"></div>
+        
+        <header class="header">
+            <img id="logo" src="images/EduZoneNoBg.png" alt="EduZone logo">
+            <nav>
+                <ul class="links">
+                    <ol><a href="services.html">Services</a></ol>
+                    <ol><a href="impact.html">Impact</a></ol>
+                    <ol><a href="about.html">About</a></ol>
+                </ul>
+            </nav>
+            <a class="contact" href="about.html#contact"><button>Contact</button></a>
+        </header>
+
+        <div class="container">
+            <div class="to-do-app">
+                <h2>To-Do List <img src="images/list.png"></h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Add your text">
+                    <button class="onClick" onclick="AddTask()">Add</button>
+                </div>
+                <ul id="list-container">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

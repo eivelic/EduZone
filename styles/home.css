@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background-image-home {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background-image-home.png);
+    background-size: cover; /* Osigurava da slika uvek pokriva ceo prostor */
+    background-position: center; /* Centriraj sliku */
+    background-repeat: no-repeat; /* Sprečava ponavljanje slike */
+    z-index: -1;
+}
+
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4{
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 80px;
+    color: rgb(81, 207, 238);
+}
+
+h2{
+    font-weight: 500;
+    font-style: italic;
+    font-size: 50px;
+}
+
+h3{
+    margin-bottom: -8px;
+    font-size: 26px;
+}
+
+h4{
+    padding: 0;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+#logo{
+    height: 90px;
+    width: auto;
+    cursor: pointer;
+    margin-left: -80px;
+}
+
+.links{
+    list-style: none; /* remove listing */
+    border-left: solid;
+    border-right: solid;
+    border-color: rgb(138, 138, 138);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* putting a grey line below the header */
+.header{
+    background-color: rgb(150, 150, 150);
+    border-bottom-style: solid;
+    border-bottom-color: rgb(99, 99, 99);
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom-width: 1px;
+}
+
+li{
+    display: inline-block; /* make them appear next to each other */
+    padding: 4px 20px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+a:hover{
+    color: #0088a9;
+    transition: all 0.3s ease 0s;
+}
+
+a:active{
+    color:#000000;
+}
+
+button{
+    padding: 8px 24px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0, 101, 126, 0.8);
+}
+
+button:active{
+    background-color: black;
+}
+
+/************************/
+
+/* Random Quote Generator Section */
+.quote-box {
+    background-color: #bababa;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.curious-man{
+    position: absolute;
+    width: auto;
+    height: 80%;
+    margin-top: 14px;
+    margin-left: -330px;
+}
+
+#quote {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: "Roboto", Arial;
+    padding: 8px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    opacity: 1;
+    transition: opacity 1s ease-in;  /* Fade in effect over 1 second */
+    
+    
+}
+
+#quote-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgb(81, 207, 238);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 1;
+    transition: opacity 1s ease-in;  /* Button fade-in effect */
+}
+
+#quote-button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
