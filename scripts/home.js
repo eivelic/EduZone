@@ -1,4 +1,3 @@
-// Array of motivational quotes
 const quotes = [
     "The only way to do great work is to love what you do. - Steve Jobs",
     "Success is the sum of small efforts, repeated day in and day out. - Robert Collier",
@@ -35,13 +34,6 @@ const quotes = [
     "Everything you've ever wanted is on the other side of fear. - George Addair"
 ];
 
-// Function to get a random quote
-function getRandomQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    return quotes[randomIndex];
-}
-
-// Event listener for button click
 function getRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     return quotes[randomIndex];
@@ -51,38 +43,26 @@ document.getElementById('quote-button').addEventListener('click', function() {
     const quoteElement = document.getElementById('quote');
     const buttonElement = document.getElementById('quote-button');
     
-    // Fade out the current quote
     quoteElement.style.opacity = 0;
-    
-    // Fade out the button
+
     buttonElement.style.opacity = 0;
-    
-    // Set a timeout to update the quote and button after the fade-out completes
+
     setTimeout(function() {
         const newQuote = getRandomQuote();
         quoteElement.textContent = newQuote;
         quoteElement.style.margin = "0 60px 0 60px";
-        
-        // Change button text to "Try another!"
+
         buttonElement.textContent = "Try another!";
         
-        // Fade in the new quote
         quoteElement.style.opacity = 1;
         
-        // Fade in the button
         buttonElement.style.opacity = 1;
-    }, 1000); // Timeout duration matches the fade-out duration
+    }, 1000); 
 });
 
 
-
-// Get the image element by its ID
-console.log('script.js loaded');
 const image = document.getElementById('logo');
 
-// Add an event listener to handle the click event
-
 image.addEventListener('click', () => {
-    // Redirect to home.html when the image is clicked
     window.location.href = 'index.html';
 });

@@ -8,9 +8,9 @@
     width: 100%;
     height: 100vh;
     background-image: url(../images/about-background.png);
-    background-size: cover; /* Osigurava da slika uvek pokriva ceo prostor */
-    background-position: center; /* Centriraj sliku */
-    background-repeat: no-repeat; /* Sprečava ponavljanje slike */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     z-index: -1;
 }
 
@@ -73,7 +73,7 @@ header{
 }
 
 .links{
-    list-style: none; /* remove listing */
+    list-style: none; 
     border-left: solid;
     border-right: solid;
     border-color: rgb(138, 138, 138);
@@ -81,7 +81,6 @@ header{
     padding-right: 100px;
 }
 
-/* putting a grey line below the header */
 .header{
     background-color: transparent;
     border-bottom-style: solid;
@@ -92,7 +91,7 @@ header{
 }
 
 li{
-    display: inline-block; /* make them appear next to each other */
+    display: inline-block;
     padding: 4px 20px;
     cursor: pointer;
     margin: 20px;
@@ -126,11 +125,10 @@ button:active{
 
 /* ACTUAL ABOUT.CSS */
 
-/* About Section */
 .about-section {
     padding: 60px 10%;
     background-color: transparent;
-    color: #edf0f1; /* Matches existing text color */
+    color: #edf0f1;
 }
 
 .about-content {
@@ -138,15 +136,14 @@ button:active{
     margin: 0 auto;
     padding: 40px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black for better readability */
-    border: 2px solid rgba(81, 207, 238, 0.5); /* Matches accent color in your existing navbar */
+    background: rgba(0, 0, 0, 0.6); 
+    border: 2px solid rgba(81, 207, 238, 0.5); 
 }
 
-/* Headings */
 .about-eduzone, .about-eduzone-2 {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
-    color: rgb(81, 207, 238); /* Light blue from your existing palette */
+    color: rgb(81, 207, 238); 
     margin-bottom: 20px;
 }
 
@@ -160,7 +157,6 @@ button:active{
     margin-top: 40px;
 }
 
-/* Paragraphs and Lists */
 div {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
@@ -180,26 +176,24 @@ div {
 }
 
 .about-content li strong {
-    color: rgb(81, 207, 238); /* Highlight key points with accent blue */
+    color: rgb(81, 207, 238); 
 }
 
-/* Links */
 .about-content a {
     color: rgb(81, 207, 238);
     text-decoration: none;
 }
 
 .about-content a:hover {
-    color: #00a2d1; /* Slightly lighter blue on hover */
+    color: #00a2d1; 
 }
 
-/* Footer Styles */
 .footer {
     background-color: rgba(0, 0, 0, 0.6);
-    color: #edf0f1; /* Matches text color used in the page */
+    color: #edf0f1;
     text-align: center;
     padding: 20px 0;
-    font-family: "Montserrat", sans-serif; /* Consistent with the rest of the page */
+    font-family: "Montserrat", sans-serif; 
     font-size: 16px;
-    border-top: 1px solid rgba(81, 207, 238, 0.5); /* Light blue border for separation */
+    border-top: 1px solid rgba(81, 207, 238, 0.5); 
 }

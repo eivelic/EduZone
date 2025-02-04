@@ -9,7 +9,6 @@ function AddTask(){
     span.innerHTML = "\u00d7";
     li.appendChild(span);
 
-    //Reset the typing
     inputBox.value = "";
     SaveData();
 }
